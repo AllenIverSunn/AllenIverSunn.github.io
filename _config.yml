@@ -1,26 +1,40 @@
-remote_theme: ankitsultana/researcher
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-title: Researcher
-url: "https://ankitsultana.com"
-baseurl: "/researcher"
-
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
 markdown: kramdown
-#ins_logo: "./bits-logo.png"
+disqus: dbyll
+google_analytics: dbyll
+title: dbyll
 
-tracking_id: #
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: dbyll
 
-footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
+description: Stylish Jekyll Theme
+author:
+  name: dbyll
+  email: dbyll@ismaildemirbilek.com
+  github: dbtek
+  twitter: dbtek
+  pinterest: asd123
+  linkedin: asd123
+  bio: Your stylish, minimalist theme!
+  email_md5: 726351295ec82e145928582f595aa3aa
 
-sass:
-    style: compressed
-    sass_dir: _sass
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
 
-nav:
- - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
- - name: "Contact"
-   link: "contact"
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+plugins:
+  - jekyll-paginate
